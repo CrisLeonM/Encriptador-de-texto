@@ -62,3 +62,24 @@ body {
 .desencriptar:focus {
     outline: none;
   }
+
+  .dentrodesencriptado {
+    position: absolute;
+    top: 280px;
+    left: 72.5%;
+    text-align: center;
+}
+
+div #titulo {
+    
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+div #subtitulo {
+    font-family: 'Inter';
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+}
