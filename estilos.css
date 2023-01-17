@@ -177,3 +177,21 @@ div #boton2:hover {
     transition: 1s;
     transform: scale(1.1);
 }
+
+.vector {
+    position: absolute;
+    top: 730px;
+    left: 380px;
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.instrucciones {
+    color: #FFFFFF;
+    position: absolute;
+    top: 713px;
+    left: 399px;
+}
