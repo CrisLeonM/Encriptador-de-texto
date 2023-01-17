@@ -83,3 +83,97 @@ div #subtitulo {
     font-weight: bold;
     font-size: 18px;
 }
+
+div #boton{
+
+    background: #0A3871;
+    color: #FFFFFF;
+    width: 328px;
+    height: 67px;
+    flex-direction: row;
+    padding: 4px;
+    gap: 8px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 780px;
+    left: 400px;
+    border: none;
+}
+
+div #boton2 {
+
+    background: #0A3871;
+    color: #FFFFFF;
+    width: 328px;
+    height: 67px;
+    flex-direction: row;
+    padding: 4px;
+    gap: 8px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 780px;
+    left: 790px;
+    border: none;
+    
+}
+
+div #boton3 {
+    background: #a8183c;
+    color: #FFFFFF;
+    width: 328px;
+    height: 67px;
+    flex-direction: row;
+    padding: 4px;
+    gap: 8px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 880px;
+    left: 595px;
+    border: none;
+}
+
+div #boton3:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+
+div #boton:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+div #boton2:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+#botoncopiar {
+    visibility: hidden;
+    background: #0eb466;
+    color: #FFFFFF;
+    height: 67px;
+    gap: 8px;
+    width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 750px;
+    left: 77.8%;
+    border: none;
+}
+
+ #botoncopiar:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
