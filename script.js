@@ -70,3 +70,8 @@ function copiar() {
     //limpiar campo
     document.getElementById("resultado").value = "";
 }
+
+function oculto() {
+    var boton = document.getElementById("botoncopiar");
+    boton.style.visibility = "visible";
+}
