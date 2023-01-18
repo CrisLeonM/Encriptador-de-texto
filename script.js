@@ -55,3 +55,18 @@ function desencriptar() {
   });
   
 }
+
+//Boton copiar
+function copiar() {
+    var textarea = document.getElementById("resultado");
+    textarea.select();
+    document.execCommand("copy");
+    // Seleccionar el textarea de origen
+    var textareaOrigen = document.getElementById("resultado");
+    // Seleccionar el textarea de destino
+    var textareaDestino = document.getElementById("campo1");
+    // Asignar el valor del textarea de origen al textarea de destino
+    textareaDestino.value = textareaOrigen.value;
+    //limpiar campo
+    document.getElementById("resultado").value = "";
+}
