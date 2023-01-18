@@ -75,3 +75,11 @@ function oculto() {
     var boton = document.getElementById("botoncopiar");
     boton.style.visibility = "visible";
 }
+
+//boton encriptar
+function encriptarYlimpiar(){
+    oculto();
+    myFunction();
+    encriptar();
+    limpiar();
+}
