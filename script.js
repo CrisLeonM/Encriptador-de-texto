@@ -83,3 +83,17 @@ function encriptarYlimpiar(){
     encriptar();
     limpiar();
 }
+
+function limpiartodo() {
+    var textarea = document.getElementById("campo1");
+    textarea.value = "";
+    
+    var textarea = document.getElementById("resultado");
+    textarea.value = "";
+  
+    var boton = document.getElementById("botoncopiar");
+    boton.style.visibility = "hidden";
+  
+    document.getElementById("div1").style.display = "block";
+  
+}
