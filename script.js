@@ -19,10 +19,39 @@ function encriptar() {
     textareaValue = textareaValue.replace(/u/gi, "ufat");
     // guarda el valor cambiado en una variable
     var newTextareaValue = textareaValue;
-    
+
     // Establece el nuevo valor del textarea
     document.getElementById("campo1").value = textareaValue;
   
     // Establece el nuevo valor en el segundo textarea
     document.getElementById("resultado").value = newTextareaValue;
+}
+
+//Boton Desencriptar
+function desencriptar() {
+    var textareaValue2 = document.getElementById("campo1").value;
+    
+    textareaValue2 = textareaValue2.replace(/ap/gi, "a");
+    textareaValue2 = textareaValue2.replace(/enter/gi, "e");
+    textareaValue2 = textareaValue2.replace(/imes/gi, "i");
+    textareaValue2 = textareaValue2.replace(/ober/gi, "o");
+    textareaValue2 = textareaValue2.replace(/ufat/gi, "u");
+    var newTextareaValue2 = textareaValue2;
+    document.getElementById("campo1").value = "";
+    document.getElementById("resultado").value = newTextareaValue2;
+  
+    // Seleccionar el textarea
+    var textarea = document.getElementById("campo1");
+  
+    // Agregar un evento input al textarea
+    textarea.addEventListener("input", function() {
+    // Convertir todas las letras a minúsculas
+    textarea.value = textarea.value.toLowerCase();
+  
+    // Quitar acentos
+    textarea.value = textarea.value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  });
+  
 }
